@@ -12,6 +12,12 @@ public class ToggleScript : MonoBehaviour
     public GameObject ToggleLeft;
     public GameObject ToggleRight;
 
+    public GameObject CharacterImage;
+    public Sprite[] CharacterSprites;
+
+    public Slider RotationSlider;
+    public Slider SizeSlider;
+
     public void ToggleBean(bool value)
     {
         Pupa.SetActive(value);
@@ -31,12 +37,36 @@ public class ToggleScript : MonoBehaviour
         Tante.SetActive(value);
     }
 
-    public void RotateRight()
+    public void Rotate()
     {
-        Pupa.transform.Rotate(0, 0, 0);
+        if (ToggleLeft.GetComponent<Toggle>().isOn)
+        {
+            Pupa.transform.localScale = new Vector2(1, 1);
+            return;
+        }
+
+        if (ToggleRight.GetComponent<Toggle>().isOn)
+        {
+            Pupa.transform.localScale = new Vector2(-1, 1);
+            return;
+        }
     }
-    public void RotateLeft()
+
+    public void ChangeCharacterImage(int index)
     {
-        Pupa.transform.Rotate(0, 180, 0);
+        CharacterImage.GetComponent<Image>().sprite = CharacterSprites[index];
     }
+
+    public void ChangeRotation()
+    {
+        float rotationsValue = RotationSlider.GetComponent<Slider>().value;
+        CharacterImage.transform.localRotation = Quaternion.Euler(0, 0, 360*rotationsValue);
+    }
+
+    public void ChangeSize()
+    {
+        float sizeValue = SizeSlider.GetComponent<Slider>().value;
+        CharacterImage.transform.localScale = new Vector2(1f * sizeValue, 1f * sizeValue);
+    }
+
 }

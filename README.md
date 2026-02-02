@@ -6,8 +6,11 @@ pirmais skolas unity projects
 - [x] UI input field lietojums
 - [x] UI Text lietojums
 - [x] UI Image lietojums
-- [ ] UI radio button lietojums
-- [ ] Drag and drop funkcionalitāte
+- [x] UI radio button lietojums
+- [x] Drag and drop funkcionalitāte
 - [x] audio source lietojums
 - [ ] Riggid body un collider lietojums
 - [ ] Projekta sagatavosana windows OS
+- [x] Izveidot galvenās izvelnes ainu
+- [x] Izveidot TV ainu
+- [ ] Integrēt virtuļu ķeršanas spēli

@@ -1,0 +1,64 @@
+using UnityEngine;
+using TMPro;
+
+public class Switchchannels : MonoBehaviour
+{
+
+    public TMP_Text ChanelLog;
+    public GameObject tvBlackScreen; 
+
+    public GameObject[] chanels; 
+
+    private int currentChanelIndex = 0;
+    private bool tvIsOn = false;
+
+    public void ToggleTV()
+    {
+        tvIsOn = !tvIsOn;
+
+        tvBlackScreen.SetActive(!tvIsOn);
+
+        if (tvIsOn)
+        {
+            ShowChanel(currentChanelIndex);
+        }
+        else
+        {
+            HideAllChanels();
+            ChanelLog.text = "OFF";
+        }
+    }
+
+    public void NextChanel()
+    {
+        if (tvIsOn && currentChanelIndex < chanels.Length - 1)
+        {
+            currentChanelIndex++;
+            ShowChanel(currentChanelIndex);
+        }
+    }
+
+    public void PreviousChanel()
+    {
+        if (tvIsOn && currentChanelIndex > 0)
+        {
+            currentChanelIndex--;
+            ShowChanel(currentChanelIndex);
+        }
+    }
+
+    private void ShowChanel(int index)
+    {
+        HideAllChanels();
+        chanels[index].SetActive(true);
+        ChanelLog.text = (index + 1).ToString();
+    }
+
+    private void HideAllChanels()
+    {
+        foreach (GameObject c in chanels)
+        {
+            c.SetActive(false);
+        }
+    }
+}

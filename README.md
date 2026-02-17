@@ -9,8 +9,13 @@ pirmais skolas unity projects
 - [x] UI radio button lietojums
 - [x] Drag and drop funkcionalitāte
 - [x] audio source lietojums
-- [ ] Riggid body un collider lietojums
-- [ ] Projekta sagatavosana windows OS
+- [x] Riggid body un collider lietojums
+- [x] Projekta sagatavosana windows OS
 - [x] Izveidot galvenās izvelnes ainu
 - [x] Izveidot TV ainu
-- [ ] Integrēt virtuļu ķeršanas spēli
+- [x] Integrēt virtuļu ķeršanas spēli
+
+
+# ši spēle ir par mr bean ir pieejams televizors MR BEAN spelite un ja kaut kas vel
+
+<img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/91600cc7-8bce-4e5e-9a11-b86ef7a43cbf" />

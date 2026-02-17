@@ -77,7 +77,7 @@ public class ObjectCatchScript : MonoBehaviour
 
     void AddScore(int amount, GameObject donut)
     {
-        sfx.PlaySFX(2);
+        sfx.PlaySFX(3);
         Destroy(donut);
         currentScoreCount += amount;
         UpdateScoreText();

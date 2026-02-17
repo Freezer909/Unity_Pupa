@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5763208777256814013}
   m_Layer: 5
   m_Name: Weights
-  m_TagString: Enemy
+  m_TagString: Weights
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

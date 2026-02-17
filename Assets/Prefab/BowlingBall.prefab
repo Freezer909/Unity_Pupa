@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5401348859169946362}
   m_Layer: 5
   m_Name: BowlingBall
-  m_TagString: Enemy
+  m_TagString: BowlingBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

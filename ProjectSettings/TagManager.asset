@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - PDonut
   - BDonut
+  - BowlingBall
+  - Weights
+  - Meteor
   layers:
   - Default
   - TransparentFX
